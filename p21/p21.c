@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+int main(){
+    printf("Name :- Darsheel shiroya\n");
+    printf("IDno:- 25CE116\n\n");
+    int arr[25];
+    int CP = 0;
+    int CN = 0;
+    int CE = 0;
+    int CO = 0;
+
+    for (int i = 0; i < 25; i++)
+    {
+        printf("Enter Value of arr[%d] : ",i);
+        scanf("%d",&arr[i]);
+        if (arr[i]>=0)
+        {
+          CP++;  
+        }
+        if (arr[i]<0)
+        {
+          CN++;  
+        }
+        if (arr[i]%2 == 0)
+        {
+          CE++;  
+        }
+        if (arr[i]%2 != 0)
+        {
+          CO++;  
+        }
+    }
+    
+    printf("-----------------------------\n");
+    printf("Positive Number : %d\n",CP);
+    printf("Negtive Number : %d\n",CN);
+    printf("Even Number : %d\n",CE);
+    printf("Odd Number : %d\n",CO);
+    
+return 0;
+}
